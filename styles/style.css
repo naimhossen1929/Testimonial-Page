@@ -12,7 +12,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2.5em;
+    gap: 2.5rem;
     padding: 100px;
 }
 /* text container styles */
@@ -73,13 +73,13 @@ body{
 .pic{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.5rem;
     margin-bottom: 10px;
 }
 .im-pic{
-    margin-right: 10px;
-    width: 25%;
-    height: 25%;
+    margin-right: 0.5rem;
+    width: 30%;
+    height: 30%;
 }
 .card-1 h6, .card-2 h6{
     font-size: 1rem;
@@ -99,8 +99,23 @@ body{
     margin-right: 190px;
 }
 .im-pic-2{
-    margin-right: 10px;
-    width: 25%;
-    height: 25%;
+    margin-right: 0.5rem;
+    width: 30%;
+    height: 30%;
+}
+
+/* Responsive Media styles */
+@media screen and (max-width:640px) {
+    .container{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .text-container, .card-container{
+        width: 100%;
+    }
+    .responsive-icon{
+        width: 30%;
+        height: 30%;
+    }
 }
     
